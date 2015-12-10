@@ -12,7 +12,12 @@ var SongQueue = Songs.extend({
       } 
     },this);
   
-    // this.on()
+    this.on('ended', function(song){
+      if(this.length > 1) {
+        this.shift();
+        this.playFirst(); 
+      } 
+    })
 
   },
 
