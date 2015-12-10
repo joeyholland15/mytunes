@@ -1,5 +1,5 @@
 describe('LibraryEntryView', function() {
-  var view, model;
+  var view, model; 
 
   beforeEach(function() {
     model = new SongModel({
